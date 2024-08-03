@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        header nav {
+            float: right;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            padding: 10px;
+        }
+
+        header nav a {
+            margin: 0px 5px;
+            text-decoration: none;
+            color: black;
+        }
+
+        header nav a.login {
+            display: inline-block;
+            height: 40px;
+            width: 85px;
+            background-color: rgb(14, 109, 234);
+            border-radius: 20px;
+            color: whitesmoke;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        section.content p.title {
+            font-size: 110px;
+            text-align: center;  
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            margin: 0px 5px;
+            text-decoration: underline;
+            color: black;
+        }
+
+        span.g {
+            color: rgb(14, 109, 234);
+        }
+
+        span.oa {
+            color: rgb(238, 13, 13);
+        }
+
+        span.ob {
+            color: rgb(226, 241, 7);
+        }
+
+        span.l {
+            color: rgb(20, 209, 20);
+        }
+
+        span.e {
+            color: rgb(238, 13, 13);
+        }
+
+        section.content {
+            padding: 90px;
+            min-height: calc(100vh - 60px - 82px);
+        }
+
+        section.content form {
+            width: 45%;
+            margin: 30px auto;  
+        }
+
+        section.content form input[type=text] {
+            width: 100%;
+            height: 30px;
+            border-radius: 10px;
+            padding: 3px 5px;
+            font-size: 18px;
+            outline: none;
+        }
+
+        footer div {
+            height: 40px;
+            background-color: rgb(216, 224, 232);
+            color: white;
+        }
+
+        div.top {
+            font-size: 15px;
+            color: gray;
+            padding: 10px 10px;
+        }
+
+        div.bottom {
+            font-size: 15px;
+            padding: 10px 10px;
+        }
+
+        div.bottom a {
+            color: gray;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+
+        div.bottom a:hover {
+            color: gray;
+            margin-right: 10px;
+            text-decoration: underline;
+        }
+
+        div.bottom a.right {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Gmail</a>
+            <a href="#">Picture</a>
+            <a href="#">⚙️</a>
+            <a href="#" class="login">Login</a>
+        </nav>
+        <div style="clear: right;"></div>
+    </header>
+    <section class="content">
+        <p class="title">
+            <span class="g">G</span><span class="oa">o</span><span class="ob">o</span><span class="g">g</span><span class="l">l</span><span class="e">e</span>
+        </p>
+        <form action="https://www.google.com/search" method="get">
+            <input type="text" name="q" id="" placeholder="Search here...">
+        </form>
+    </section>
+    <footer>
+        <div class="top">
+            <p>Indonesia</p>
+        </div>
+        <hr>
+        <div class="bottom">
+            <a href="#">Advertisement</a>
+            <a href="#">Business</a>
+            <a href="#">About</a>
+            <a href="#" class="right">Advertisement</a>
+            <a href="#" class="right">Business</a>
+            <a href="#" class="right">About</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -79,7 +79,7 @@
 
         section.content form {
             width: 45%;
-            margin: 30px auto;  
+            margin: 25px auto 15px auto;  
         }
 
         section.content form input[type=text] {
@@ -94,7 +94,7 @@
         footer div {
             height: 40px;
             background-color: rgb(216, 224, 232);
-            color: white;
+            color: gray;
         }
 
         div.top {
@@ -123,6 +123,53 @@
         div.bottom a.right {
             float: right;
         }
+
+        nav.below {
+            text-align: center;
+        }
+
+        nav.below a.button {
+            display: inline-block;
+            height: 30px;
+            width: 150px;
+            background-color: rgb(216, 224, 232);
+            border-radius: 5px;
+            color: gray;
+            line-height: 30px;
+            text-decoration: none;
+            margin-right: 5px;
+        }
+
+        nav.below a.button:hover {
+            display: inline-block;
+            height: 30px;
+            width: 150px;
+            background-color: rgb(208, 216, 225);
+            border-radius: 5px;
+            color: gray;
+            line-height: 30px;
+            text-decoration: none;
+            margin-right: 5px;
+        }
+
+        div.language {
+            display: block;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 7px;
+        }
+
+        div.language a {
+            margin-right: 3px;
+            color: rgb(14, 109, 234);
+            text-decoration: none;
+        }
+
+        div.language a:hover {
+            margin-right:3px;
+            color: rgb(14, 109, 234);
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -142,6 +189,15 @@
         <form action="https://www.google.com/search" method="get">
             <input type="text" name="q" id="" placeholder="Search here...">
         </form>
+        <nav class="below">
+            <a href="#" class="button">Google search</a>
+            <a href="#" class="button">I'm feeling lucky</a>
+        </nav>
+        <div class="language">
+            <span>Google is available in:</span>
+            <a href="#">English</a>
+            <a href="#">Spanish</a>
+        </div>
     </section>
     <footer>
         <div class="top">
@@ -152,9 +208,9 @@
             <a href="#">Advertisement</a>
             <a href="#">Business</a>
             <a href="#">About</a>
-            <a href="#" class="right">Advertisement</a>
-            <a href="#" class="right">Business</a>
-            <a href="#" class="right">About</a>
+            <a href="#" class="right">Settings</a>
+            <a href="#" class="right">Policy</a>
+            <a href="#" class="right">Privacy</a>
         </div>
     </footer>
 </body>
